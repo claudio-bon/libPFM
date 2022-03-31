@@ -23,6 +23,16 @@ pfm::io::read_pfm("/path/to/file.pfm", disparity);
 std::cout << "Disparity height = " << disparity.size() << std::endl;
 std::cout << "Disparity width = " << disparity[0].size() << std::endl;
 ```
+Saving a .pfm file:
+```C++
+using fs = std::filesystem
+
+std::unique_ptr<float[]> disparity(new int[height * width]);
+compute_disparity(&(*disparity), im_left, im_right); //External function
+pfm::io::write_pfm("/path/to/file.pfm", &(*disparity));
+if ( fs::exists(fs::path("/path/to/file.pfm")) )
+    std::cout << "File created successfully." << std::endl;
+```
 
 ## Acknowledgements
 The souce code include all the sources it has been taken from or inspired by.
