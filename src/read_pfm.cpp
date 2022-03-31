@@ -62,6 +62,7 @@ namespace pfm
             std::string dim = rdln(file);
             std::regex dim_regex("([0-9]+) ([0-9]+)");
             if(std::regex_match(dim, dim_regex)) {
+                /**Inspired by : https://stackoverflow.com/questions/7868936/read-file-line-by-line-using-ifstream-in-c*/
                 std::istringstream dim_ss(dim);
                 if (!(dim_ss >> width >> height)) { throw std::logic_error("Malformed PDF header."); }
             }
