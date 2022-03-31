@@ -27,6 +27,8 @@ Saving a .pfm file:
 ```C++
 using fs = std::filesystem
 
+...
+
 std::unique_ptr<float[]> disparity(new float[height * width]);
 compute_disparity(&(*disparity), im_left, im_right); //External function
 
