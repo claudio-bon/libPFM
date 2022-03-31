@@ -11,4 +11,4 @@ The folder `src` containts all the `.cpp` files. <br />
 The folder `include` contains all the `.h` files. <br />
 The folder `test` contains a `main` in which the functionalities of the library are tested. <br />
 <br />
-In order to use the library it is only necessary to include `include/pfm.h` where the `write_pfm` and `read_pfm` functions are declared.<br />
+In order to use the library it is only necessary to include `include/pfm.h` where the `write_pfm` (defined in `src/write_pfm.cpp`) and `read_pfm` (defined in `src/read_pfm.cpp`) functions are declared.<br />
