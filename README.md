@@ -38,5 +38,18 @@ if ( fs::exists(fs::path("/path/to/file.pfm")) )
     std::cout << "File created successfully." << std::endl;
 ```
 
+Another example saving a .pfm file:
+```C++
+using fs = std::filesystem
+
+std::vector<std::vector<std::vector<float>>> color_im;
+f(color_im); //External function
+
+pfm::io::write_pfm("/path/to/file.pfm", color_im);
+
+if ( fs::exists(fs::path("/path/to/file.pfm")) )
+    std::cout << "Color file created successfully." << std::endl;
+```
+
 ## Acknowledgements
 The souce code include all the sources it has been taken from or inspired by.
