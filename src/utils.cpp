@@ -4,6 +4,8 @@ namespace pfm
 {
     namespace io
     {
+        /**This function has been taken from:
+        https://github.com/microsoft/AirSim/blob/77a879e8b6459543caa1ab867e277f4958becb91/AirLib/include/common/common_utils/Utils.hpp#L681*/
         bool is_little_endian()
         {
             int intval = 1;
