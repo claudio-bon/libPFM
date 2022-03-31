@@ -3,7 +3,7 @@ This library provides an easy and accessible way to read and write [.pfm](http:/
 
 ## Motivations
 .pfm file format plays an important role in the storage of floating point matrices, which is much needed in fields such as Stereo Vision, where it is not possible to rely on 8 or 16 bit integers to store, for instance, disparity and depth maps. <br />
-While finding functions that handle .pfm files in Python is quite straightforward, it is not the same in C++.
+While finding functions that handle .pfm files in Python is quite straightforward, the same does not hold for C++.
 The aim of this library is to provide and accessible way to read and write .pfm files without relying on external dependencies.
 
 ## Project Structure
