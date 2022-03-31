@@ -27,7 +27,7 @@ Saving a .pfm file:
 ```C++
 using fs = std::filesystem
 
-std::unique_ptr<float[]> disparity(new int[height * width]);
+std::unique_ptr<float[]> disparity(new float[height * width]);
 compute_disparity(&(*disparity), im_left, im_right); //External function
 
 pfm::io::write_pfm("/path/to/file.pfm", &(*disparity));
