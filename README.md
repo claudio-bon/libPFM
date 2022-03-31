@@ -13,3 +13,6 @@ The folder `test` contains a `main` in which the functionalities of the library 
 <br />
 In order to use the library it is only necessary to include `include/pfm.h` where the `write_pfm` (defined in `src/write_pfm.cpp`) and `read_pfm` (defined in `src/read_pfm.cpp`) functions are declared.<br />
 All the functions in `include/pfm.h` are included in the namespace `pfm::io::`.
+
+## Acknowledgements
+The souce code include all the sources it has been taken from or inspired by.
