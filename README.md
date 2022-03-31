@@ -1,5 +1,5 @@
 # libPFM
-This library provides an easy and accessible way to read and write [.pfm](http://www.pauldebevec.com/Research/HDR/PFM/) files in C++ by only relying on the sandard library.
+This library provides an easy and accessible way to read and write [.pfm](http://www.pauldebevec.com/Research/HDR/PFM/) files in C++ by only relying on the standard library.
 
 ## Motivations
 .pfm file format plays an important role in the storage of floating point matrices, which is much needed in fields such as Stereo Vision where it is not possible to rely on 8 or 16 bit integers to store, for instance, disparity and depth maps. <br />
