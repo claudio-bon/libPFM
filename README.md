@@ -15,6 +15,7 @@ In order to use the library it is only necessary to include `include/pfm.h` wher
 All the functions in `include/pfm.h` are included in the namespace `pfm::io::`.
 
 ## Example
+Reading a .pfm file:
 ```C++
 std::vector<std::vector<float>> disparity;
 pfm::io::read_pfm("/path/to/file.pfm", disparity);
