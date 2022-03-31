@@ -30,7 +30,7 @@ using fs = std::filesystem
 std::unique_ptr<float[]> disparity(new float[height * width]);
 compute_disparity(&(*disparity), im_left, im_right); //External function
 
-pfm::io::write_pfm("/path/to/file.pfm", &(*disparity));
+pfm::io::write_pfm("/path/to/file.pfm", &(*disparity), height, width, false);
 
 if ( fs::exists(fs::path("/path/to/file.pfm")) )
     std::cout << "File created successfully." << std::endl;
