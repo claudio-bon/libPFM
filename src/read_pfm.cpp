@@ -29,6 +29,7 @@ namespace pfm
             return s;
         }
 
+        /**Taken from: https://stackoverflow.com/questions/2782725/converting-float-values-from-big-endian-to-little-endian*/
         float reverse_float(float in_float)
         {
             float ret_val;
