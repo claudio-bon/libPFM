@@ -14,10 +14,35 @@ The folder `test` contains a `main` in which the functionalities of the library 
 In order to use the library it is only necessary to include `include/pfm.h` where the `write_pfm` (defined in `src/write_pfm.cpp`) and `read_pfm` (defined in `src/read_pfm.cpp`) functions are declared.<br />
 All the functions in `include/pfm.h` are included in the namespace `pfm::io::`.
 
-## Examples
+## Usage
 `std::vector<std::vector<float>>` will be seen as a grayscale image and `std::vector<std::vector<std::vector<float>>>` as a color image.<br />
 The same holds for pointers: `float**` for grayscale images while `float***` for color images.<br />
+In case of `<std::vector<float>` and `float *` the height and width and a boolean indicating whether the image is grayscale or color will be taken as argument by `pfm::io::write_pfm` and given as output by `pfm::io::read_pfm`.<br />
 <br />
+The following interfaces are provided.<br />
+For the writing function:
+```C++
+void write_pfm(std::string path, float* mat, int height, int width, bool color, int scale = 1);
+void write_pfm(std::string path, float** mat, int height, int width, int scale = 1);
+void write_pfm(std::string path, float*** mat, int height, int width, int scale = 1);
+
+void write_pfm(std::string path, std::vector<float>& mat, int height, int width, bool color, int scale = 1);
+void write_pfm(std::string path, std::vector<std::vector<float>>& mat, int scale = 1);
+void write_pfm(std::string path, std::vector<std::vector<std::vector<float>>>& mat, int scale = 1);
+```
+For the reading function;
+```C++
+void read_pfm(std::string path, std::vector<float>& mat, int& height, int& width, bool& color, int& scale);
+void read_pfm(std::string path, std::vector<float>& mat, int& height, int& width, bool& color);
+
+void read_pfm(std::string path, std::vector<std::vector<float>>& mat, int& scale);
+void read_pfm(std::string path, std::vector<std::vector<float>>& mat);
+
+void read_pfm(std::string path, std::vector<std::vector<std::vector<float>>>& mat, int& scale);
+void read_pfm(std::string path, std::vector<std::vector<std::vector<float>>>& mat);
+```
+
+## Examples
 Reading a .pfm file:
 ```C++
 ...
