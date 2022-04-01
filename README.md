@@ -30,7 +30,7 @@ void write_pfm(std::string path, std::vector<float>& mat, int height, int width,
 void write_pfm(std::string path, std::vector<std::vector<float>>& mat, int scale = 1);
 void write_pfm(std::string path, std::vector<std::vector<std::vector<float>>>& mat, int scale = 1);
 ```
-For the reading function;
+For the reading function:
 ```C++
 void read_pfm(std::string path, std::vector<float>& mat, int& height, int& width, bool& color, int& scale);
 void read_pfm(std::string path, std::vector<float>& mat, int& height, int& width, bool& color);
