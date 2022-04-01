@@ -92,4 +92,4 @@ if ( fs::exists(fs::path("/path/to/file.pfm")) )
 The souce code include all the sources it has been taken from or inspired by.
 
 ## References
-For all informations about .pfm files refer to [this link](http://www.pauldebevec.com/Research/HDR/PFM/).
+For further readings about .pfm file format refer to [this link](http://www.pauldebevec.com/Research/HDR/PFM/).
