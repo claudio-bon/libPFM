@@ -17,6 +17,8 @@ All the functions in `include/pfm.h` are included in the namespace `pfm::io::`.
 ## Examples
 Reading a .pfm file:
 ```C++
+...
+
 std::vector<std::vector<float>> disparity;
 pfm::io::read_pfm("/path/to/file.pfm", disparity);
 
@@ -25,6 +27,8 @@ std::cout << "Disparity width = " << disparity[0].size() << std::endl;
 ```
 Saving a .pfm file:
 ```C++
+...
+
 using fs = std::filesystem
 
 ...
@@ -43,6 +47,8 @@ if ( fs::exists(fs::path("/path/to/file.pfm")) )
 
 Another example saving a .pfm file:
 ```C++
+...
+
 using fs = std::filesystem
 
 std::vector<std::vector<std::vector<float>>> color_im;
