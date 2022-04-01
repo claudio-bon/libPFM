@@ -19,7 +19,7 @@ namespace pfm
         /**Handles grayscale images*/
         void write_pfm(std::string path, std::vector<std::vector<float>>& mat, int scale = 1);
         /**Handles color images*/
-        void write_pfm(std::string path, std::vector<std::vector<std::vector<float>>>& mat, int scale);
+        void write_pfm(std::string path, std::vector<std::vector<std::vector<float>>>& mat, int scale = 1);
 
 
         /**Reads a pfm file and store its content in a flat vector*/
