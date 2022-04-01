@@ -15,8 +15,8 @@ In order to use the library it is only necessary to include `include/pfm.h` wher
 All the functions in `include/pfm.h` are included in the namespace `pfm::io::`.
 
 ## Examples
-Generally speaking a `std::vector<std::vector<float>>` is used for grayscale images while `std::vector<std::vector<std::vector<float>>>` is used for color images.<br />
-The same holds for pointers: `float**` for grayscale images while `float***` fol color images.<br />
+`std::vector<std::vector<float>>` will be seen as a grayscale image and `std::vector<std::vector<std::vector<float>>>` as a color image.<br />
+The same holds for pointers: `float**` for grayscale images while `float***` for color images.<br />
 <br />
 Reading a .pfm file:
 ```C++
