@@ -103,6 +103,7 @@ namespace pfm
             bool color;
             std::vector<float> flat_mat;
             read_pfm(path, flat_mat, height, width, color, scale);
+            
             if (color) throw std::logic_error("The file " + path + "contains a color image.");
             else {
                 mat = std::vector<std::vector<float>>(height);
@@ -126,6 +127,7 @@ namespace pfm
             bool color;
             std::vector<float> flat_mat;
             read_pfm(path, flat_mat, height, width, color, scale);
+            
             if (!color) throw std::logic_error("The file " + path + "contains a grayscale image.");
             else {
                 mat = std::vector<std::vector<std::vector<float>>>(height);
