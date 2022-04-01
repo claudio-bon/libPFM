@@ -25,10 +25,12 @@ namespace pfm
         /**Reads a pfm file and store its content in a flat vector*/
         void read_pfm(std::string path, std::vector<float>& mat, int& height, int& width, bool& color, int& scale);
         void read_pfm(std::string path, std::vector<float>& mat, int& height, int& width, bool& color);
-        /**Reads a pfm file and store its content in a 2D matrix*/
+        /**Reads a grayscale image from a pfm file and store it in a 2D matrix.
+        Throws an exception if the .pfm file contains a color image.*/
         void read_pfm(std::string path, std::vector<std::vector<float>>& mat, int& scale);
         void read_pfm(std::string path, std::vector<std::vector<float>>& mat);
-        /**Reads a pfm file and store its content in a 3D matrix*/
+        /**Reads a color image from a pfm file and store it in a 3D matrix.
+        Throws an exception if the .pfm file contains a grayscale image.*/
         void read_pfm(std::string path, std::vector<std::vector<std::vector<float>>>& mat, int& scale);
         void read_pfm(std::string path, std::vector<std::vector<std::vector<float>>>& mat);
     }
