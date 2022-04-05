@@ -22,8 +22,8 @@ In case of `<std::vector<float>` and `float *` the height and width and a boolea
 The following interfaces are provided.<br />
 For the writing function:
 ```C++
-void write_pfm(std::string path, float* mat, int height, int width, bool color, int scale = 1);
-void write_pfm(std::string path, float** mat, int height, int width, int scale = 1);
+void write_pfm(std::string path, float* mat,   int height, int width, bool color, int scale = 1);
+void write_pfm(std::string path, float** mat,  int height, int width, int scale = 1);
 void write_pfm(std::string path, float*** mat, int height, int width, int scale = 1);
 
 void write_pfm(std::string path, std::vector<float>& mat, int height, int width, bool color, int scale = 1);
