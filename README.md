@@ -32,11 +32,11 @@ void write_pfm(std::string path, std::vector<std::vector<std::vector<float>>>& m
 ```
 For the reading function:
 ```C++
-void read_pfm(std::string path, float* mat, int& height, int& width, bool& color, int& scale);
-void read_pfm(std::string path, float* mat, int& height, int& width, bool& color);
+void read_pfm(std::string path, float* mat,   int& height, int& width, bool& color, int& scale);
+void read_pfm(std::string path, float* mat,   int& height, int& width, bool& color);
 
-void read_pfm(std::string path, float** mat, int& height, int& width, int& scale);
-void read_pfm(std::string path, float** mat, int& height, int& width);
+void read_pfm(std::string path, float** mat,  int& height, int& width, int& scale);
+void read_pfm(std::string path, float** mat,  int& height, int& width);
 
 void read_pfm(std::string path, float*** mat, int& height, int& width, int& scale);
 void read_pfm(std::string path, float*** mat, int& height, int& width);
