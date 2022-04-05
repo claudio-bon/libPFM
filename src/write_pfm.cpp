@@ -1,5 +1,5 @@
 #include "../include/pfm.h"
-#include "../include/utils.h"
+#include "utils.h"
 #include <stdexcept>
 #include <fstream>
 #include <iostream>
