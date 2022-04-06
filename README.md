@@ -1,4 +1,4 @@
-<h1 align="center">libPFM</h1>
+# libPFM
 This library provides an easy and accessible way to read and write [.pfm](http://www.pauldebevec.com/Research/HDR/PFM/) (Portable FloatMap) files in C++ by only relying on the standard library.
 
 ## Motivations
