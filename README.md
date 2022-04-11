@@ -73,9 +73,9 @@ using fs = std::filesystem
 std::unique_ptr<float[]> disparity(new float[height * width]);
 compute_disparity(&(*disparity), im_left, im_right); //External function
 
-/*The last argument is false because disparity is a grayscale image. It should be set to true for color images.
-Mind the fact that height, width and color argument should be given only if the input image is passed in the flat
-form as in this case. The same holds for read_pfm function.*/
+/*The last argument is false because disparity is a grayscale image. It should be set to true
+for color images. Mind the fact that height, width and color argument should be given only if
+the input image is passed in the flat form as in this case. The same holds for read_pfm function.*/
 pfm::io::write_pfm("/path/to/file.pfm", &(*disparity), height, width, false);
 
 if ( fs::exists(fs::path("/path/to/file.pfm")) )
