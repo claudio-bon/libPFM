@@ -71,7 +71,7 @@ using fs = std::filesystem
 ...
 
 std::unique_ptr<float[]> disparity(new float[height * width]);
-compute_disparity(&(*disparity), im_left, im_right); //External function
+compute_disparity(&disparity[0], im_left, im_right); //External function
 
 /*The last argument is false because disparity is a grayscale image. It should be set to true
 for color images. Mind the fact that height, width and color argument should be given only if
