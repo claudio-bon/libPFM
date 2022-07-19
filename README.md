@@ -8,7 +8,7 @@ The aim of this library is to provide an accessible way to read and write .pfm f
 
 ## Project Structure
 The folder `src` containts all the `.cpp` files. <br />
-The folder `include` contains all the `.h` files. <br />
+The folder `include` contains the main `.h` file. <br />
 The folder `test` contains a `main` in which the functionalities of the library are tested. <br />
 <br />
 In order to use the library it is only necessary to include `include/pfm.h` where the `write_pfm` (defined in `src/write_pfm.cpp`) and `read_pfm` (defined in `src/read_pfm.cpp`) functions are declared.<br />
